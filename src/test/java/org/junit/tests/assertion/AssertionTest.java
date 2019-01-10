@@ -44,7 +44,7 @@ public class AssertionTest {
         try {
             Assert.fail();
         } catch (AssertionError exception) {
-            assertEquals("java.lang.AssertionError", exception.toString());
+            assertEquals("sf.lang.AssertionError", exception.toString());
         }
     }
 
