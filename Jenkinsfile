@@ -14,13 +14,13 @@ pipeline {
             }
         }
 
-        stage('Stare 2 - Maven') {
+        stage('Stage 2 - Maven') {
             steps {
                 sh "./mvnw clean install"
             }
         }
 
-        stage('Stare 3 - Test') {
+        stage('Stage 3 - Test') {
             steps {
                 junit '**/target/surefire-reports/*.xml'
             }
